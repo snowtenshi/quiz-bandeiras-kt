@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/isabelline"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Início"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/isabelline"
+        android:padding="8dp"
+        android:background="@color/space_cadet" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/snow_colored" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="Maria Gabriela Mariano"
+                android:textColor="@color/space_cadet"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="RA: 2571392312024"
+                android:textColor="@color/space_cadet"
+                android:textSize="16sp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:ems="14"
+        android:hint="Digite Seu Nome"
+        android:textColorHint="@color/isabelline"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/isabelline"
+        android:background="@color/ultra_violet"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Iniciar Quiz"
+            android:textColor="@color/isabelline"
+            android:textSize="16sp"
+            android:backgroundTint="@color/space_cadet" />
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair do Jogo"
+            android:textColor="@color/isabelline"
+            android:textSize="16sp"
+            android:backgroundTint="@color/space_cadet" />
+
+    </LinearLayout>
+
+</LinearLayout>

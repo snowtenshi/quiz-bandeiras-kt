@@ -67,8 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="@color/ultra_violet"
-                android:textColor="@color/isabelline"
+                android:background="@drawable/radio_button_selector"
+                android:textColor="@color/space_cadet"
                 android:layout_marginBottom="8dp"
                 style="@style/CustomRadioButton" />
 
@@ -77,8 +77,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="@color/ultra_violet"
-                android:textColor="@color/isabelline"
+                android:background="@drawable/radio_button_selector"
+                android:textColor="@color/space_cadet"
                 android:layout_marginBottom="8dp"
                 style="@style/CustomRadioButton" />
 
@@ -87,8 +87,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="@color/ultra_violet"
-                android:textColor="@color/isabelline"
+                android:background="@drawable/radio_button_selector"
+                android:textColor="@color/space_cadet"
                 android:layout_marginBottom="8dp"
                 style="@style/CustomRadioButton"/>
 
@@ -97,8 +97,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:background="@color/ultra_violet"
-                android:textColor="@color/isabelline"
+                android:background="@drawable/radio_button_selector"
+                android:textColor="@color/space_cadet"
                 style="@style/CustomRadioButton" />
 
         </RadioGroup>

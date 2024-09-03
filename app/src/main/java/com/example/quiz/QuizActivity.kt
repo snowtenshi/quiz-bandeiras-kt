@@ -1,5 +1,6 @@
 package com.example.quiz
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
@@ -48,6 +49,7 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var rdOption2: RadioButton
     private lateinit var rdOption3: RadioButton
     private lateinit var rdOption4: RadioButton
+    private lateinit var playerName: String
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,6 +61,7 @@ class QuizActivity : AppCompatActivity() {
         rdOption2 = findViewById(R.id.radioButton2)
         rdOption3 = findViewById(R.id.radioButton3)
         rdOption4 = findViewById(R.id.radioButton4)
+        playerName = intent.getStringExtra("Player Name").orEmpty()
 
         findViewById<Button>(R.id.btn_next).setOnClickListener {
             val selectedOptionIndex = when (findViewById<RadioGroup>(R.id.radioGroup).checkedRadioButtonId) {
@@ -105,7 +108,12 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private fun showResult() {
-        Toast.makeText(this, "Sua pontuação: $score de ${imagesFlags.size}", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("Pontuação", score)
+        intent.putExtra("Total_Perguntas", imagesFlags.size)
+        intent.putExtra("Player Name", playerName)
+        startActivity(intent)
+        finish()
     }
 
 

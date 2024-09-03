@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         btnStart.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
+            intent.putExtra("Player Name", playerName.text.toString())
             startActivity(intent)
         }
 

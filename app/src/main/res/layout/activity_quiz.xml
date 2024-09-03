@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/isabelline"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/isabelline"
+        android:padding="22dp"
+        android:background="@color/space_cadet" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="Que País é Esse?"
+            android:textAlignment="center"
+            android:textColor="@color/space_cadet"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/question_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/ultra_violet"
+                android:textColor="@color/isabelline"
+                android:layout_marginBottom="8dp"
+                style="@style/CustomRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/ultra_violet"
+                android:textColor="@color/isabelline"
+                android:layout_marginBottom="8dp"
+                style="@style/CustomRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/ultra_violet"
+                android:textColor="@color/isabelline"
+                android:layout_marginBottom="8dp"
+                style="@style/CustomRadioButton"/>
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/ultra_violet"
+                android:textColor="@color/isabelline"
+                style="@style/CustomRadioButton" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/space_cadet"
+            android:text="Responder"
+            android:textColor="@color/isabelline"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

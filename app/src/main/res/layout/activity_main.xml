@@ -17,7 +17,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textColor="@color/isabelline"
-        android:padding="8dp"
+        android:padding="22dp"
         android:background="@color/space_cadet" />
 
     <LinearLayout
@@ -65,7 +65,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edt_player_name"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center"
@@ -89,10 +89,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/space_cadet"
+            android:enabled="false"
             android:text="Iniciar Quiz"
             android:textColor="@color/isabelline"
-            android:textSize="16sp"
-            android:backgroundTint="@color/space_cadet" />
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btn_quit"
